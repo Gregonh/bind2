@@ -121,6 +121,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="DataSetBinding.aspx" />
+    <Content Include="DataSetMultipleTableBinding.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="DirectDataWithBinding.aspx" />
     <Content Include="favicon.ico" />
@@ -193,6 +194,13 @@
     </Compile>
     <Compile Include="DataSetBinding.aspx.designer.cs">
       <DependentUpon>DataSetBinding.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetMultipleTableBinding.aspx.cs">
+      <DependentUpon>DataSetMultipleTableBinding.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataSetMultipleTableBinding.aspx.designer.cs">
+      <DependentUpon>DataSetMultipleTableBinding.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
