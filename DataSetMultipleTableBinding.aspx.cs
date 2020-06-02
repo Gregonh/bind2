@@ -17,6 +17,15 @@ namespace binding_prueba
         {
             using (SqlConnection con = new SqlConnection(connectionString))
             {
+                /*consulta para hacer el procedimiento
+                 * 
+                 * CREATE PROCEDURE [dbo].spCategoriesProducts
+                    AS
+                    SELECT * from Categories
+                    SELECT * from Products
+                    RETURN 0
+                 * 
+                 * */
                 SqlDataAdapter adapter = new SqlDataAdapter("spCategoriesProducts", con);
                 adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
                 DataSet ds = new DataSet();
